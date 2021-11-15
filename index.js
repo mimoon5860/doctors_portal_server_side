@@ -47,7 +47,6 @@ async function run() {
             const email = req.query.email;
             const date = req.query.date;
 
-            console.log(email, date);
             const query = { email: email, date: date }
 
             const cursor = appointmentsCollection.find(query);
